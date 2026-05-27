@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { motion } from 'framer-motion';
 import { useLanguage } from '@/context/LanguageContext.jsx';
 import { CheckCircle2, Award, Users, TrendingUp, ShieldCheck, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -99,15 +98,7 @@ const AboutPage = () => {
           </div>
           
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-            <motion.div initial={{
-            opacity: 0,
-            x: -30
-          }} animate={{
-            opacity: 1,
-            x: 0
-          }} transition={{
-            duration: 0.8
-          }} className="max-w-3xl">
+            <div className="max-w-3xl">
               <div className="mb-6 flex items-center space-x-3">
                 <div className="h-1 w-16 bg-[#009200]"></div>
                 <span className="text-[#009200] font-semibold text-sm tracking-wider uppercase">Distributor Resmi Oli Jepang</span>
@@ -130,7 +121,7 @@ const AboutPage = () => {
               <Button onClick={handleContactClick} className="bg-[#009200] hover:bg-[#007700] text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300">
                 Konsultasi Gratis Sekarang
               </Button>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -138,20 +129,10 @@ const AboutPage = () => {
         <section className="bg-[#009200] py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {stats.map((stat, index) => <motion.div key={index} initial={{
-              opacity: 0,
-              y: 20
-            }} whileInView={{
-              opacity: 1,
-              y: 0
-            }} transition={{
-              delay: index * 0.1
-            }} viewport={{
-              once: true
-            }} className="text-center">
+              {stats.map((stat, index) => <div key={index} className="text-center">
                   <div className="text-4xl md:text-5xl font-black text-white mb-2">{stat.number}</div>
                   <div className="text-sm md:text-base text-white/90 font-medium">{stat.label}</div>
-                </motion.div>)}
+                </div>)}
             </div>
           </div>
         </section>
@@ -160,15 +141,7 @@ const AboutPage = () => {
         <section className="py-20 md:py-28">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-              <motion.div initial={{
-              opacity: 0,
-              x: -30
-            }} whileInView={{
-              opacity: 1,
-              x: 0
-            }} viewport={{
-              once: true
-            }} className="lg:col-span-2">
+              <div className="lg:col-span-2">
                 <div className="sticky top-24">
                   <div className="mb-4">
                     <span className="text-[#009200] font-bold text-sm tracking-wider uppercase">Sejarah Perusahaan Kami Sejak 2009</span>
@@ -176,17 +149,9 @@ const AboutPage = () => {
                   <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">Partner Terpercaya Perusahaan Industri</h2>
                   <div className="h-1 w-24 bg-[#009200] mb-6"></div>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{
-              opacity: 0,
-              x: 30
-            }} whileInView={{
-              opacity: 1,
-              x: 0
-            }} viewport={{
-              once: true
-            }} className="lg:col-span-3 space-y-8">
+              <div className="lg:col-span-3 space-y-8">
                 <div className="bg-gray-50 p-8 rounded-2xl border-l-4 border-[#009200]">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Mengapa Memilih Pelumas Premium Sugimura?</h3>
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
@@ -201,10 +166,10 @@ const AboutPage = () => {
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-                  <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/laboratorium-csmrp.png" alt="Fasilitas manufaktur oli Jepang premium Sugimura" className="rounded-xl shadow-lg h-48 w-full object-cover" />
-                  <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/gudang-WT6J5.png" alt="Laboratorium quality control pelumas premium industri" className="rounded-xl shadow-lg h-48 w-full object-cover" />
+                  <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/laboratorium-csmrp.png" alt="Fasilitas manufaktur oli Jepang premium Sugimura" className="rounded-xl shadow-lg h-48 w-full object-cover" loading="lazy" />
+                  <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/gudang-WT6J5.png" alt="Laboratorium quality control pelumas premium industri" className="rounded-xl shadow-lg h-48 w-full object-cover" loading="lazy" />
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -212,39 +177,21 @@ const AboutPage = () => {
         {/* Certifications */}
         <section className="py-20 bg-gray-900 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} whileInView={{
-            opacity: 1,
-            y: 0
-          }} viewport={{
-            once: true
-          }} className="text-center mb-16">
+            <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-black mb-4">Standar Tertinggi, Terjamin</h2>
               <p className="text-xl text-gray-400">Sertifikasi internasional yang membuktikan komitmen distributor oli Jepang berkualitas kami</p>
-            </motion.div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-              {certifications.map((cert, index) => <motion.div key={index} initial={{
-              opacity: 0,
-              y: 30
-            }} whileInView={{
-              opacity: 1,
-              y: 0
-            }} transition={{
-              delay: index * 0.1
-            }} viewport={{
-              once: true
-            }} className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-[#009200] transition-all duration-300">
+              {certifications.map((cert, index) => <div key={index} className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-[#009200] transition-all duration-300">
                   <Award className="h-12 w-12 text-[#009200] mb-4" />
                 <h3 className="text-2xl font-bold mb-2">{cert.name}</h3>
                 <p className="text-l text-gray-400">{cert.desc}</p>
-                </motion.div>)}
+                </div>)}
             </div>
 
             <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hidden md:block">
-              <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/24200142-9abd-4aaa-889d-6c2062a46193-Ft5vl.jpeg" alt="Sertifikasi ISO dan jaminan mutu oli Sugimura" className="w-full h-64 object-cover rounded-xl mb-6" />
+              <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/24200142-9abd-4aaa-889d-6c2062a46193-Ft5vl.jpeg" alt="Sertifikasi ISO dan jaminan mutu oli Sugimura" className="w-full h-64 object-cover rounded-xl mb-6" loading="lazy" />
             </div>
           </div>
         </section>
@@ -252,35 +199,17 @@ const AboutPage = () => {
         {/* Trusted Clients */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} whileInView={{
-            opacity: 1,
-            y: 0
-          }} viewport={{
-            once: true
-          }} className="text-center mb-16">
+            <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
                 Dipercaya Pemimpin Industri
               </h2>
               <p className="text-xl text-gray-600">Lebih dari 100 perusahaan industri di Indonesia sudah memercayai produk Sugimura Oil.</p>
-            </motion.div>
+            </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-              {clientLogos.map((client, index) => <motion.div key={index} initial={{
-              opacity: 0,
-              scale: 0.9
-            }} whileInView={{
-              opacity: 1,
-              scale: 1
-            }} transition={{
-              delay: index * 0.05
-            }} viewport={{
-              once: true
-            }} className="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-[#009200] hover:shadow-lg transition-all duration-300 text-center flex items-center justify-center min-h-[120px]">
+              {clientLogos.map((client, index) => <div key={index} className="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-[#009200] hover:shadow-lg transition-all duration-300 text-center flex items-center justify-center min-h-[120px]">
                   <div className="text-sm md:text-base font-bold text-gray-900 leading-tight">{client.name}</div>
-                </motion.div>)}
+                </div>)}
             </div>
 
             <div className="bg-gradient-to-r from-[#009200] to-[#007700] p-12 rounded-2xl text-center text-white">
@@ -300,34 +229,18 @@ const AboutPage = () => {
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <motion.div initial={{
-              opacity: 0,
-              x: -30
-            }} whileInView={{
-              opacity: 1,
-              x: 0
-            }} viewport={{
-              once: true
-            }}>
-                <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/0a66034f90d2bcb7-acJGA.png" alt="Gudang penyimpanan inventaris produk pelumas premium" className="rounded-2xl shadow-2xl" />
-              </motion.div>
+              <div>
+                <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/0a66034f90d2bcb7-acJGA.png" alt="Gudang penyimpanan inventaris produk pelumas premium" className="rounded-2xl shadow-2xl" loading="lazy" />
+              </div>
 
-              <motion.div initial={{
-              opacity: 0,
-              x: 30
-            }} whileInView={{
-              opacity: 1,
-              x: 0
-            }} viewport={{
-              once: true
-            }}>
+              <div>
                 <div className="mb-4">
                   <span className="text-[#009200] font-bold text-sm tracking-wider uppercase">Bukti Nyata</span>
                 </div>
                 <h2 className="text-4xl font-black text-gray-900 mb-6">
                   Hasil yang Terukur untuk Bisnis Anda
                 </h2>
-                
+
                 <div className="space-y-6">
                   <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#009200]">
                     <div className="text-3xl font-black text-[#009200] mb-2">30%</div>
@@ -344,7 +257,7 @@ const AboutPage = () => {
                     <p className="text-gray-700 font-semibold">Pengurangan konsumsi bahan bakar pada mesin diesel industri dengan pelumas premium</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>

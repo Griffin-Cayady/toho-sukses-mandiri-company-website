@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/context/LanguageContext.jsx';
@@ -125,46 +124,42 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation Drawer */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-gray-100 overflow-hidden"
-            id="mobile-menu"
-          >
-            <div className="px-4 pt-4 pb-6 space-y-2">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  onClick={() => setIsOpen(false)}
-                  aria-current={isActive(item.path) ? "page" : undefined}
-                  className={cn(
-                    "flex items-center justify-between px-4 py-3 rounded-xl transition-colors",
-                    isActive(item.path)
-                      ? "bg-green-50 text-[#009200] font-semibold"
-                      : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
-                  )}
-                >
-                  {item.name}
-                  {isActive(item.path) && <div className="w-1.5 h-1.5 rounded-full bg-[#009200]" />}
-                </Link>
-              ))}
-              
-              <div className="h-px bg-gray-100 my-4"></div>
-              
-              <Button 
-                onClick={handleContactClick} 
-                className="w-full bg-[#009200] text-white h-12 rounded-xl font-bold shadow-sm"
-              >
-                {t('navbar.contact')}
-              </Button>
-            </div>
-          </motion.div>
+      <div
+        className={cn(
+          "md:hidden bg-white border-t border-gray-100 overflow-hidden transition-all duration-300",
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         )}
-      </AnimatePresence>
+        id="mobile-menu"
+      >
+        <div className="px-4 pt-4 pb-6 space-y-2">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              onClick={() => setIsOpen(false)}
+              aria-current={isActive(item.path) ? "page" : undefined}
+              className={cn(
+                "flex items-center justify-between px-4 py-3 rounded-xl transition-colors",
+                isActive(item.path)
+                  ? "bg-green-50 text-[#009200] font-semibold"
+                  : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+              )}
+            >
+              {item.name}
+              {isActive(item.path) && <div className="w-1.5 h-1.5 rounded-full bg-[#009200]" />}
+            </Link>
+          ))}
+
+          <div className="h-px bg-gray-100 my-4"></div>
+
+          <Button
+            onClick={handleContactClick}
+            className="w-full bg-[#009200] text-white h-12 rounded-xl font-bold shadow-sm"
+          >
+            {t('navbar.contact')}
+          </Button>
+        </div>
+      </div>
     </nav>
   );
 };

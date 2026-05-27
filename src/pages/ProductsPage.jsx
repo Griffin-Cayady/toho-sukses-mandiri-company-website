@@ -1,6 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Search, 
   Download, 
@@ -189,14 +188,8 @@ const ProductsPage = () => {
                   <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileFilterOpen ? 'rotate-180' : ''}`} />
                 </Button>
 
-                <AnimatePresence>
-                  {isMobileFilterOpen && !loading && (
-                    <motion.div 
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-xl max-h-60 overflow-y-auto"
-                    >
+                {isMobileFilterOpen && !loading && (
+                    <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-xl max-h-60 overflow-y-auto">
                       <div className="p-2 space-y-1">
                         {categories.map((cat) => (
                           <button
@@ -216,9 +209,8 @@ const ProductsPage = () => {
                           </button>
                         ))}
                       </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                    </div>
+                )}
               </div>
 
               {loading ? (
@@ -252,16 +244,8 @@ const ProductsPage = () => {
               ) : (
                 <div className="space-y-8">
                   <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6">
-                    <AnimatePresence mode='popLayout'>
-                      {paginatedProducts.map((product, idx) => (
-                        <motion.div
-                          key={product.id}
-                          initial={{ opacity: 0, scale: 0.9 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          exit={{ opacity: 0, scale: 0.9 }}
-                          transition={{ duration: 0.2, delay: idx * 0.05 }}
-                          layout
-                        >
+                      {paginatedProducts.map((product) => (
+                        <div key={product.id}>
                           <Card className="h-full flex flex-col hover:shadow-lg transition-all duration-300 border-gray-200 group overflow-hidden bg-white">
                             <div className="relative aspect-[4/3] bg-gray-50 overflow-hidden border-b border-gray-100">
                               <img 
@@ -294,9 +278,8 @@ const ProductsPage = () => {
                               </Button>
                             </CardFooter>
                           </Card>
-                        </motion.div>
+                        </div>
                       ))}
-                    </AnimatePresence>
                   </div>
                   {totalPages > 1 && (
                     <div className="flex justify-center items-center gap-2 mt-8 md:mt-12">

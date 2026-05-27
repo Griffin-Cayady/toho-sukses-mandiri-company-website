@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowRight, BarChart3, Clock, ShieldCheck, MapPin, Phone, Mail, Loader2, AlertTriangle, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -149,7 +148,7 @@ const HomePage = () => {
       {/* Hero Section */}
       <section className="relative h-[85vh] flex items-center bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1568099659323-b95d41d3dba3" alt="Mesin industri berat yang menggunakan oli Jepang pelumas premium" className="w-full h-full object-cover opacity-60" fetchpriority="high" loading="eager" />
+          <img src="https://images.unsplash.com/photo-1568099659323-b95d41d3dba3?w=1920&q=75&auto=format&fit=crop" alt="Mesin industri berat yang menggunakan oli Jepang pelumas premium" className="w-full h-full object-cover opacity-60" fetchpriority="high" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-900/80 to-transparent"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -195,7 +194,7 @@ const HomePage = () => {
       <section className="bg-gray-900 py-24 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+            <div>
               <h2 className="text-4xl font-bold mb-6 leading-tight">Jangan biarkan pelumas buruk <br /><span className="text-[#009200]">Menghentikan Produksi Anda.</span></h2>
               <p className="text-gray-400 text-lg mb-8 leading-relaxed">Kegagalan mesin bukan hanya ketidaknyamanan, itu adalah kerugian pendapatan. Formulasi oli Jepang Sugimura dirancang khusus sebagai pelumas premium untuk menahan lingkungan operasional suhu tinggi dan kelembaban tinggi disegala industri di Indonesia.</p>
               <div className="space-y-6">
@@ -221,11 +220,11 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative">
+            </div>
+            <div className="relative">
               <div className="absolute -inset-4 bg-[#009200]/20 blur-2xl rounded-full"></div>
-              <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/0a66034f90d2bcb7-ifU3b.png" alt="Mesin industri berat di pabrik manufaktur yang menggunakan pelumas premium" className="relative rounded-lg shadow-2xl border border-white/10" />
-            </motion.div>
+              <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/0a66034f90d2bcb7-ifU3b.png" alt="Mesin industri berat di pabrik manufaktur yang menggunakan pelumas premium" className="relative rounded-lg shadow-2xl border border-white/10" loading="lazy" />
+            </div>
           </div>
         </div>
       </section>
@@ -249,8 +248,8 @@ const HomePage = () => {
             </div>}
             
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {loading ? [1, 2, 3, 4].map(i => <div key={i} className="h-96 bg-gray-200 animate-pulse rounded-xl"></div>) : bestSellingProducts.map((product, index) => (
-              <motion.div key={product.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.1 }} viewport={{ once: true }}>
+            {loading ? [1, 2, 3, 4].map(i => <div key={i} className="h-96 bg-gray-200 animate-pulse rounded-xl"></div>) : bestSellingProducts.map((product) => (
+              <div key={product.id}>
                 <Card className="h-full flex flex-col hover:shadow-lg transition-all duration-300 border-gray-200 group overflow-hidden bg-white">
                   <div className="relative aspect-[4/3] bg-gray-50 overflow-hidden border-b border-gray-100">
                     <img src={product.imageUrl} alt={`Produk oli Jepang pelumas premium ${product.name}`} className="w-full h-full object-contain p-6 transform group-hover:scale-105 transition-transform duration-500" onError={e => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1699373381566-296f6e3a96dc'; }} />
@@ -269,7 +268,7 @@ const HomePage = () => {
                     <Button className="flex-1 bg-[#009200] hover:bg-[#007a00] text-white shadow-sm" onClick={() => handleQuoteRequest(product.name)}>Minta Penawaran</Button>
                   </CardFooter>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
           
