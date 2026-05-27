@@ -149,23 +149,23 @@ const HomePage = () => {
       {/* Hero Section */}
       <section className="relative h-[85vh] flex items-center bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1568099659323-b95d41d3dba3" alt="Mesin industri berat yang menggunakan oli Jepang pelumas premium" className="w-full h-full object-cover opacity-60" />
+          <img src="https://images.unsplash.com/photo-1568099659323-b95d41d3dba3" alt="Mesin industri berat yang menggunakan oli Jepang pelumas premium" className="w-full h-full object-cover opacity-60" fetchpriority="high" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-900/80 to-transparent"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-2xl">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-1.5 mb-6">
+            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-1.5 mb-6">
               <span className="flex h-2 w-2 rounded-full bg-[#009200]"></span>
               <span className="text-sm font-medium text-gray-200 tracking-wide uppercase">Distributor Resmi Oli Jepang Sejak 2019</span>
-            </motion.div>
-            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6 tracking-tight">
+            </div>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6 tracking-tight">
               Maksimalkan Presisi <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Industri.</span>
-            </motion.h1>
-            <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="text-xl text-gray-300 mb-10 leading-relaxed font-light">
+            </h1>
+            <p className="text-xl text-gray-300 mb-10 leading-relaxed font-light">
               Lindungi mesin anda dengan <strong className="text-white font-semibold">Pelumas Premium Sugimura</strong>. Diciptakan di Jepang untuk meningkatkan performa dan memperpanjang umur mesin anda hingga 2x lipat.
-            </motion.p>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="flex flex-col sm:flex-row gap-4">
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/products">
                 <Button className="h-14 px-8 bg-[#009200] hover:bg-green-700 text-white text-lg font-semibold rounded-md w-full sm:w-auto transition-all duration-300 shadow-[0_0_20px_rgba(0,146,0,0.3)]">
                   Lihat Produk Oli Jepang <ArrowRight className="ml-2 h-5 w-5" />
@@ -174,7 +174,7 @@ const HomePage = () => {
               <Button onClick={() => document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' })} className="h-14 px-8 bg-gray-700 hover:bg-gray-800 text-white text-lg font-medium rounded-md w-full sm:w-auto transition-all duration-300">
                 Minta Penawaran
               </Button>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -184,9 +184,9 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <h2 className="text-center text-4xl font-black text-gray-900 mb-8 leading-tight">Sertifikasi & Kredibilitas</h2>
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center transition-all duration-500">
-             <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/iso-logo-1-zjUUq.jpeg" alt="Sertifikat ISO 9001 untuk kualitas distributor oli jepang" className="h-24 md:h-32 object-contain" />
-             <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/sni-logo-QipY4.jpeg" alt="Sertifikasi SNI Standar Nasional Indonesia untuk pelumas premium" className="h-20 md:h-24 object-contain" />
-             <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/iso-logo-2-39fK2.jpeg" alt="Sertifikat Akreditasi KAN untuk pelumas industri" className="h-24 md:h-32 object-contain" />
+             <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/iso-logo-1-zjUUq.jpeg" alt="Sertifikat ISO 9001 untuk kualitas distributor oli jepang" className="h-24 md:h-32 object-contain" loading="lazy" />
+             <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/sni-logo-QipY4.jpeg" alt="Sertifikasi SNI Standar Nasional Indonesia untuk pelumas premium" className="h-20 md:h-24 object-contain" loading="lazy" />
+             <img src="https://horizons-cdn.hostinger.com/d0add064-3096-4fce-8785-3403938947b9/iso-logo-2-39fK2.jpeg" alt="Sertifikat Akreditasi KAN untuk pelumas industri" className="h-24 md:h-32 object-contain" loading="lazy" />
           </div>
         </div>
       </div>
