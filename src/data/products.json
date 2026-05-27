@@ -1,0 +1,940 @@
+[
+	{
+		"id": 1,
+		"name": "Sugilube M-10",
+		"category": "Hydraulic Oil",
+		"quantity": 200,
+		"image": "Sugilube M-10.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Sugilube AW-22",
+		"category": "Hydraulic Oil",
+		"quantity": 200,
+		"image": "sugilube-aw-22.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Sugilube AW-32",
+		"category": "Hydraulic Oil",
+		"quantity": 200,
+		"image": "sugilube-aw-32.jpg"
+	},
+	{
+		"id": 4,
+		"name": "Sugilube AW-46",
+		"category": "Hydraulic Oil",
+		"quantity": 200,
+		"image": "sugilube-aw-46.jpg"
+	},
+	{
+		"id": 5,
+		"name": "Sugilube AW-68",
+		"category": "Hydraulic Oil",
+		"quantity": 200,
+		"image": "sugilube-aw-68.jpg"
+	},
+	{
+		"id": 6,
+		"name": "Sugilube AW-100",
+		"category": "Hydraulic Oil",
+		"quantity": 200,
+		"image": "sugilube-aw-100.jpg"
+	},
+	{
+		"id": 7,
+		"name": "Sugilube AW-150",
+		"category": "Hydraulic Oil",
+		"quantity": 200,
+		"image": "sugilube-aw-150.jpg"
+	},
+	{
+		"id": 8,
+		"name": "Sugilube CF-10W",
+		"category": "Diesel Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-cf-10w.jpg"
+	},
+	{
+		"id": 9,
+		"name": "Sugilube CF SAE 30",
+		"category": "Diesel Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-cf-sae-30.jpg"
+	},
+	{
+		"id": 10,
+		"name": "Sugilube CF SAE 40",
+		"category": "Diesel Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-cf-sae-40.jpg"
+	},
+	{
+		"id": 11,
+		"name": "Sugilube CF SAE 50",
+		"category": "Diesel Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-cf-sae-50.jpg"
+	},
+	{
+		"id": 12,
+		"name": "Sugilube 15W-40 CF-4/SG",
+		"category": "Diesel Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-15w-40-cf-4-sg.jpg"
+	},
+	{
+		"id": 13,
+		"name": "Sugilube 20W-50 CF-4/SG",
+		"category": "Diesel Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-20w-50-cf-4-sg.jpg"
+	},
+	{
+		"id": 14,
+		"name": "Sugilube 15W-40 CI-4/SL",
+		"category": "Diesel Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-15w-40-ci-4-sl.jpg"
+	},
+	{
+		"id": 15,
+		"name": "Sugilube 20W-50 CI-4/SL",
+		"category": "Diesel Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-20w-50-ci-4-sl.jpg"
+	},
+	{
+		"id": 16,
+		"name": "Sugilube 10W-40 API XP-2",
+		"category": "Gasoline Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-10w-40-api-xp-2.jpg"
+	},
+	{
+		"id": 17,
+		"name": "Sugilube 5W-30 API SN",
+		"category": "Gasoline Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-5w-30-api-sn.jpg"
+	},
+	{
+		"id": 18,
+		"name": "Sugilube 10W-40 API SN",
+		"category": "Gasoline Engine Oil",
+		"quantity": 200,
+		"image": "sugilube-10w-40-api-sn.jpg"
+	},
+	{
+		"id": 19,
+		"name": "Sugigear SAE 90 GL-4",
+		"category": "Transmission Oil",
+		"quantity": 200,
+		"image": "sugigear-sae-90-gl-4.jpg"
+	},
+	{
+		"id": 20,
+		"name": "Sugigear SAE 140 GL-4",
+		"category": "Transmission Oil",
+		"quantity": 200,
+		"image": "sugigear-sae-140-gl-4.jpg"
+	},
+	{
+		"id": 21,
+		"name": "Sugigear SAE 90 GL-5",
+		"category": "Transmission Oil",
+		"quantity": 200,
+		"image": "sugigear-sae-90-gl-5.jpg"
+	},
+	{
+		"id": 22,
+		"name": "Sugigear SAE 140 GL-5",
+		"category": "Transmission Oil",
+		"quantity": 200,
+		"image": "sugigear-sae-140-gl-5.jpg"
+	},
+	{
+		"id": 23,
+		"name": "Sugigear SAE 80w-90 GL-5",
+		"category": "Transmission Oil",
+		"quantity": 200,
+		"image": "sugigear-sae-80w-90-gl-5.jpg"
+	},
+	{
+		"id": 24,
+		"name": "Sugigear SAE 85w-140 GL-5",
+		"category": "Transmission Oil",
+		"quantity": 200,
+		"image": "sugigear-sae-85w-140-gl-5.jpg"
+	},
+	{
+		"id": 25,
+		"name": "Sugigear HD-68",
+		"category": "Gear Oil",
+		"quantity": 200,
+		"image": "sugigear-hd-68.jpg"
+	},
+	{
+		"id": 26,
+		"name": "Sugigear HD-100",
+		"category": "Gear Oil",
+		"quantity": 200,
+		"image": "sugigear-hd-100.jpg"
+	},
+	{
+		"id": 27,
+		"name": "Sugigear HD-150",
+		"category": "Gear Oil",
+		"quantity": 200,
+		"image": "sugigear-hd-150.jpg"
+	},
+	{
+		"id": 28,
+		"name": "Sugigear HD-220",
+		"category": "Gear Oil",
+		"quantity": 200,
+		"image": "sugigear-hd-220.jpg"
+	},
+	{
+		"id": 29,
+		"name": "Sugigear HD-320",
+		"category": "Gear Oil",
+		"quantity": 200,
+		"image": "sugigear-hd-320.jpg"
+	},
+	{
+		"id": 30,
+		"name": "Sugigear HD-460",
+		"category": "Gear Oil",
+		"quantity": 200,
+		"image": "sugigear-hd-460.jpg"
+	},
+	{
+		"id": 31,
+		"name": "Sugigear HD-680",
+		"category": "Gear Oil",
+		"quantity": 200,
+		"image": "sugigear-hd-680.jpg"
+	},
+	{
+		"id": 32,
+		"name": "Sugigear HD-1000",
+		"category": "Gear Oil",
+		"quantity": 200,
+		"image": "sugigear-hd-1000.jpg"
+	},
+	{
+		"id": 33,
+		"name": "Compero CR-32",
+		"category": "Compressor Oil",
+		"quantity": 200,
+		"image": "compero-cr-32.jpg"
+	},
+	{
+		"id": 34,
+		"name": "Compero CR-46",
+		"category": "Compressor Oil",
+		"quantity": 200,
+		"image": "compero-cr-46.jpg"
+	},
+	{
+		"id": 35,
+		"name": "Compero CR-68",
+		"category": "Compressor Oil",
+		"quantity": 200,
+		"image": "compero-cr-68.jpg"
+	},
+	{
+		"id": 36,
+		"name": "Compero CR-100",
+		"category": "Compressor Oil",
+		"quantity": 200,
+		"image": "compero-cr-100.jpg"
+	},
+	{
+		"id": 37,
+		"name": "Compero FG-30",
+		"category": "Refrigeration Oil",
+		"quantity": 200,
+		"image": "compero-fg-30.jpg"
+	},
+	{
+		"id": 38,
+		"name": "Compero FG-46",
+		"category": "Refrigeration Oil",
+		"quantity": 200,
+		"image": "compero-fg-46.jpg"
+	},
+	{
+		"id": 39,
+		"name": "Compero FG-55",
+		"category": "Refrigeration Oil",
+		"quantity": 200,
+		"image": "compero-fg-55.jpg"
+	},
+	{
+		"id": 40,
+		"name": "Compero FG-68",
+		"category": "Refrigeration Oil",
+		"quantity": 200,
+		"image": "compero-fg-68.jpg"
+	},
+	{
+		"id": 41,
+		"name": "Compero FG-100",
+		"category": "Refrigeration Oil",
+		"quantity": 200,
+		"image": "compero-fg-100.jpg"
+	},
+	{
+		"id": 42,
+		"name": "Hitro HR-32",
+		"category": "Heat Transfer Oil",
+		"quantity": 200,
+		"image": "hitro-hr-32.jpg"
+	},
+	{
+		"id": 43,
+		"name": "Hitro HR-46",
+		"category": "Heat Transfer Oil",
+		"quantity": 200,
+		"image": "hitro-hr-46.jpg"
+	},
+	{
+		"id": 44,
+		"name": "Hitro HR-68",
+		"category": "Heat Transfer Oil",
+		"quantity": 200,
+		"image": "hitro-hr-68.jpg"
+	},
+	{
+		"id": 45,
+		"name": "Hitro HR-100",
+		"category": "Heat Transfer Oil",
+		"quantity": 200,
+		"image": "hitro-hr-100.jpg"
+	},
+	{
+		"id": 46,
+		"name": "Troil TR-32",
+		"category": "Turbine Oil",
+		"quantity": 200,
+		"image": "troil-tr-32.jpg"
+	},
+	{
+		"id": 47,
+		"name": "Troil TR-46",
+		"category": "Turbine Oil",
+		"quantity": 200,
+		"image": "troil-tr-46.jpg"
+	},
+	{
+		"id": 48,
+		"name": "Troil TR-68",
+		"category": "Turbine Oil",
+		"quantity": 200,
+		"image": "troil-tr-68.jpg"
+	},
+	{
+		"id": 49,
+		"name": "Troil TR-100",
+		"category": "Turbine Oil",
+		"quantity": 200,
+		"image": "troil-tr-100.jpg"
+	},
+	{
+		"id": 50,
+		"name": "Sugiway T-32",
+		"category": "Slide Oil",
+		"quantity": 200,
+		"image": "sugiway-t-32.jpg"
+	},
+	{
+		"id": 51,
+		"name": "Sugiway T-46",
+		"category": "Slide Oil",
+		"quantity": 200,
+		"image": "sugiway-t-46.jpg"
+	},
+	{
+		"id": 52,
+		"name": "Sugiway T-68",
+		"category": "Slide Oil",
+		"quantity": 200,
+		"image": "sugiway-t-68.jpg"
+	},
+	{
+		"id": 53,
+		"name": "Sugiway T-220",
+		"category": "Slide Oil",
+		"quantity": 200,
+		"image": "sugiway-t-220.jpg"
+	},
+	{
+		"id": 54,
+		"name": "Sugimarine MR-305",
+		"category": "Marine Engine Oil",
+		"quantity": 200,
+		"image": "sugimarine-mr-305.jpg"
+	},
+	{
+		"id": 55,
+		"name": "Sugimarine MR-3030",
+		"category": "Marine Engine Oil",
+		"quantity": 200,
+		"image": "sugimarine-mr-3030.jpg"
+	},
+	{
+		"id": 56,
+		"name": "Sugimarine MR-4030",
+		"category": "Marine Engine Oil",
+		"quantity": 200,
+		"image": "sugimarine-mr-4030.jpg"
+	},
+	{
+		"id": 57,
+		"name": "Sugimarine MR-5040",
+		"category": "Marine Engine Oil",
+		"quantity": 200,
+		"image": "sugimarine-mr-5040.jpg"
+	},
+	{
+		"id": 58,
+		"name": "Sugimarine MR-5070",
+		"category": "Marine Engine Oil",
+		"quantity": 200,
+		"image": "sugimarine-mr-5070.jpg"
+	},
+	{
+		"id": 59,
+		"name": "Sugimarine 2T TC-W3",
+		"category": "Speed Boat Engine Oil",
+		"quantity": 200,
+		"image": "sugimarine-2t-tc-w3.jpg"
+	},
+	{
+		"id": 60,
+		"name": "Rapro 30",
+		"category": "Rubber Processing Oil",
+		"quantity": 200,
+		"image": "rapro-30.jpg"
+	},
+	{
+		"id": 61,
+		"name": "Suncleaner N-200",
+		"category": "Cleaning Oil",
+		"quantity": 200,
+		"image": "suncleaner-n-200.jpg"
+	},
+	{
+		"id": 62,
+		"name": "Suncleaner N-300T",
+		"category": "Cleaning Oil",
+		"quantity": 200,
+		"image": "suncleaner-n-300t.jpg"
+	},
+	{
+		"id": 63,
+		"name": "Suncleaner G-1000M",
+		"category": "Cleaning Oil",
+		"quantity": 200,
+		"image": "suncleaner-g-1000m.jpg"
+	},
+	{
+		"id": 64,
+		"name": "Sugicut CE-11N",
+		"category": "Cutting Coolant",
+		"quantity": 200,
+		"image": "sugicut-ce-11n.jpg"
+	},
+	{
+		"id": 65,
+		"name": "Sugicut CE-14G",
+		"category": "Cutting Coolant",
+		"quantity": 200,
+		"image": "sugicut-ce-14g.jpg"
+	},
+	{
+		"id": 66,
+		"name": "Sugicut CS-53S",
+		"category": "Cutting Coolant",
+		"quantity": 200,
+		"image": "sugicut-cs-53s.jpg"
+	},
+	{
+		"id": 67,
+		"name": "Sunpress S-554",
+		"category": "Pressing Oil",
+		"quantity": 200,
+		"image": "sunpress-s-554.jpg"
+	},
+	{
+		"id": 68,
+		"name": "Sugilube M-10",
+		"category": "Hydraulic Oil",
+		"quantity": 20,
+		"image": "sugilube-m-10-20l.jpg"
+	},
+	{
+		"id": 69,
+		"name": "Sugilube AW-22",
+		"category": "Hydraulic Oil",
+		"quantity": 20,
+		"image": "sugilube-aw-22-20l.jpg"
+	},
+	{
+		"id": 70,
+		"name": "Sugilube AW-32",
+		"category": "Hydraulic Oil",
+		"quantity": 20,
+		"image": "sugilube-aw-32-20l.jpg"
+	},
+	{
+		"id": 71,
+		"name": "Sugilube AW-46",
+		"category": "Hydraulic Oil",
+		"quantity": 20,
+		"image": "sugilube-aw-46-20l.jpg"
+	},
+	{
+		"id": 72,
+		"name": "Sugilube AW-68",
+		"category": "Hydraulic Oil",
+		"quantity": 20,
+		"image": "sugilube-aw-68-20l.jpg"
+	},
+	{
+		"id": 73,
+		"name": "Sugilube AW-100",
+		"category": "Hydraulic Oil",
+		"quantity": 20,
+		"image": "sugilube-aw-100-20l.jpg"
+	},
+	{
+		"id": 74,
+		"name": "Sugilube AW-150",
+		"category": "Hydraulic Oil",
+		"quantity": 20,
+		"image": "sugilube-aw-150-20l.jpg"
+	},
+	{
+		"id": 75,
+		"name": "Sugilube CF-10W",
+		"category": "Diesel Engine Oil",
+		"quantity": 20,
+		"image": "sugilube-cf-10w-20l.jpg"
+	},
+	{
+		"id": 76,
+		"name": "Sugilube CF SAE 30",
+		"category": "Diesel Engine Oil",
+		"quantity": 20,
+		"image": "sugilube-cf-sae-30-20l.jpg"
+	},
+	{
+		"id": 77,
+		"name": "Sugilube CF SAE 40",
+		"category": "Diesel Engine Oil",
+		"quantity": 18,
+		"image": "sugilube-cf-sae-40-18l.jpg"
+	},
+	{
+		"id": 78,
+		"name": "Sugilube CF SAE 50",
+		"category": "Diesel Engine Oil",
+		"quantity": 20,
+		"image": "sugilube-cf-sae-50-20l.jpg"
+	},
+	{
+		"id": 79,
+		"name": "Sugilube 15W-40 CF-4/SG",
+		"category": "Diesel Engine Oil",
+		"quantity": 20,
+		"image": "sugilube-15w-40-cf-4-sg-20l.jpg"
+	},
+	{
+		"id": 80,
+		"name": "Sugilube 20W-50 CF-4/SG",
+		"category": "Diesel Engine Oil",
+		"quantity": 20,
+		"image": "sugilube-20w-50-cf-4-sg-20l.jpg"
+	},
+	{
+		"id": 81,
+		"name": "Sugilube 15W-40 CI-4/SL",
+		"category": "Diesel Engine Oil",
+		"quantity": 20,
+		"image": "sugilube-15w-40-ci-4-sl-20l.jpg"
+	},
+	{
+		"id": 82,
+		"name": "Sugilube 20W-50 CI-4/SL",
+		"category": "Diesel Engine Oil",
+		"quantity": 20,
+		"image": "sugilube-20w-50-ci-4-sl-20l.jpg"
+	},
+	{
+		"id": 83,
+		"name": "Sugilube 10W-40 API XP-2",
+		"category": "Gasoline Engine Oil",
+		"quantity": 20,
+		"image": "sugilube-10w-40-api-xp-2-20l.jpg"
+	},
+	{
+		"id": 84,
+		"name": "Sugilube 5W-30 API SN",
+		"category": "Gasoline Engine Oil",
+		"quantity": 20,
+		"image": "sugilube-5w-30-api-sn-20l.jpg"
+	},
+	{
+		"id": 85,
+		"name": "Sugilube 10W-40 API SN",
+		"category": "Gasoline Engine Oil",
+		"quantity": 20,
+		"image": "sugilube-10w-40-api-sn-20l.jpg"
+	},
+	{
+		"id": 86,
+		"name": "Sugigear SAE 90 GL-4",
+		"category": "Transmission Oil",
+		"quantity": 20,
+		"image": "sugigear-sae-90-gl-4-20l.jpg"
+	},
+	{
+		"id": 87,
+		"name": "Sugigear SAE 140 GL-4",
+		"category": "Transmission Oil",
+		"quantity": 20,
+		"image": "sugigear-sae-140-gl-4-20l.jpg"
+	},
+	{
+		"id": 88,
+		"name": "Sugigear SAE 90 GL-5",
+		"category": "Transmission Oil",
+		"quantity": 20,
+		"image": "sugigear-sae-90-gl-5-20l.jpg"
+	},
+	{
+		"id": 89,
+		"name": "Sugigear SAE 140 GL-5",
+		"category": "Transmission Oil",
+		"quantity": 20,
+		"image": "sugigear-sae-140-gl-5-20l.jpg"
+	},
+	{
+		"id": 90,
+		"name": "Sugigear SAE 80w-90 GL-5",
+		"category": "Transmission Oil",
+		"quantity": 20,
+		"image": "sugigear-sae-80w-90-gl-5-20l.jpg"
+	},
+	{
+		"id": 91,
+		"name": "Sugigear SAE 85w-140 GL-5",
+		"category": "Transmission Oil",
+		"quantity": 20,
+		"image": "sugigear-sae-85w-140-gl-5-20l.jpg"
+	},
+	{
+		"id": 92,
+		"name": "Sugigear HD-68",
+		"category": "Gear Oil",
+		"quantity": 20,
+		"image": "sugigear-hd-68-20l.jpg"
+	},
+	{
+		"id": 93,
+		"name": "Sugigear HD-100",
+		"category": "Gear Oil",
+		"quantity": 20,
+		"image": "sugigear-hd-100-20l.jpg"
+	},
+	{
+		"id": 94,
+		"name": "Sugigear HD-150",
+		"category": "Gear Oil",
+		"quantity": 20,
+		"image": "sugigear-hd-150-20l.jpg"
+	},
+	{
+		"id": 95,
+		"name": "Sugigear HD-220",
+		"category": "Gear Oil",
+		"quantity": 20,
+		"image": "sugigear-hd-220-20l.jpg"
+	},
+	{
+		"id": 96,
+		"name": "Sugigear HD-320",
+		"category": "Gear Oil",
+		"quantity": 20,
+		"image": "sugigear-hd-320-20l.jpg"
+	},
+	{
+		"id": 97,
+		"name": "Sugigear HD-460",
+		"category": "Gear Oil",
+		"quantity": 20,
+		"image": "sugigear-hd-460-20l.jpg"
+	},
+	{
+		"id": 98,
+		"name": "Sugigear HD-680",
+		"category": "Gear Oil",
+		"quantity": 20,
+		"image": "sugigear-hd-680-20l.jpg"
+	},
+	{
+		"id": 99,
+		"name": "Sugigear HD-1000",
+		"category": "Gear Oil",
+		"quantity": 20,
+		"image": "sugigear-hd-1000-20l.jpg"
+	},
+	{
+		"id": 100,
+		"name": "Compero CR-32",
+		"category": "Compressor Oil",
+		"quantity": 20,
+		"image": "compero-cr-32-20l.jpg"
+	},
+	{
+		"id": 101,
+		"name": "Compero CR-46",
+		"category": "Compressor Oil",
+		"quantity": 20,
+		"image": "compero-cr-46-20l.jpg"
+	},
+	{
+		"id": 102,
+		"name": "Compero CR-68",
+		"category": "Compressor Oil",
+		"quantity": 20,
+		"image": "compero-cr-68-20l.jpg"
+	},
+	{
+		"id": 103,
+		"name": "Compero CR-100",
+		"category": "Compressor Oil",
+		"quantity": 20,
+		"image": "compero-cr-100-20l.jpg"
+	},
+	{
+		"id": 104,
+		"name": "Compero FG-30",
+		"category": "Refrigeration Oil",
+		"quantity": 20,
+		"image": "compero-fg-30-20l.jpg"
+	},
+	{
+		"id": 105,
+		"name": "Compero FG-46",
+		"category": "Refrigeration Oil",
+		"quantity": 20,
+		"image": "compero-fg-46-20l.jpg"
+	},
+	{
+		"id": 106,
+		"name": "Compero FG-55",
+		"category": "Refrigeration Oil",
+		"quantity": 20,
+		"image": "compero-fg-55-20l.jpg"
+	},
+	{
+		"id": 107,
+		"name": "Compero FG-68",
+		"category": "Refrigeration Oil",
+		"quantity": 20,
+		"image": "compero-fg-68-20l.jpg"
+	},
+	{
+		"id": 108,
+		"name": "Compero FG-100",
+		"category": "Refrigeration Oil",
+		"quantity": 20,
+		"image": "compero-fg-100-20l.jpg"
+	},
+	{
+		"id": 109,
+		"name": "Hitro HR-32",
+		"category": "Heat Transfer Oil",
+		"quantity": 20,
+		"image": "hitro-hr-32-20l.jpg"
+	},
+	{
+		"id": 110,
+		"name": "Hitro HR-46",
+		"category": "Heat Transfer Oil",
+		"quantity": 20,
+		"image": "hitro-hr-46-20l.jpg"
+	},
+	{
+		"id": 111,
+		"name": "Hitro HR-68",
+		"category": "Heat Transfer Oil",
+		"quantity": 20,
+		"image": "hitro-hr-68-20l.jpg"
+	},
+	{
+		"id": 112,
+		"name": "Hitro HR-100",
+		"category": "Heat Transfer Oil",
+		"quantity": 20,
+		"image": "hitro-hr-100-20l.jpg"
+	},
+	{
+		"id": 113,
+		"name": "Troil TR-32",
+		"category": "Turbine Oil",
+		"quantity": 20,
+		"image": "troil-tr-32-20l.jpg"
+	},
+	{
+		"id": 114,
+		"name": "Troil TR-46",
+		"category": "Turbine Oil",
+		"quantity": 20,
+		"image": "troil-tr-46-20l.jpg"
+	},
+	{
+		"id": 115,
+		"name": "Troil TR-68",
+		"category": "Turbine Oil",
+		"quantity": 20,
+		"image": "troil-tr-68-20l.jpg"
+	},
+	{
+		"id": 116,
+		"name": "Troil TR-100",
+		"category": "Turbine Oil",
+		"quantity": 20,
+		"image": "troil-tr-100-20l.jpg"
+	},
+	{
+		"id": 117,
+		"name": "Sugiway T-32",
+		"category": "Slide Oil",
+		"quantity": 20,
+		"image": "sugiway-t-32-20l.jpg"
+	},
+	{
+		"id": 118,
+		"name": "Sugiway T-46",
+		"category": "Slide Oil",
+		"quantity": 20,
+		"image": "sugiway-t-46-20l.jpg"
+	},
+	{
+		"id": 119,
+		"name": "Sugiway T-68",
+		"category": "Slide Oil",
+		"quantity": 20,
+		"image": "sugiway-t-68-20l.jpg"
+	},
+	{
+		"id": 120,
+		"name": "Sugiway T-220",
+		"category": "Slide Oil",
+		"quantity": 20,
+		"image": "sugiway-t-220-20l.jpg"
+	},
+	{
+		"id": 121,
+		"name": "Sugimarine MR-305",
+		"category": "Marine Engine Oil",
+		"quantity": 20,
+		"image": "sugimarine-mr-305-20l.jpg"
+	},
+	{
+		"id": 122,
+		"name": "Sugimarine MR-3030",
+		"category": "Marine Engine Oil",
+		"quantity": 20,
+		"image": "sugimarine-mr-3030-20l.jpg"
+	},
+	{
+		"id": 123,
+		"name": "Sugimarine MR-4030",
+		"category": "Marine Engine Oil",
+		"quantity": 20,
+		"image": "sugimarine-mr-4030-20l.jpg"
+	},
+	{
+		"id": 124,
+		"name": "Sugimarine MR-5040",
+		"category": "Marine Engine Oil",
+		"quantity": 20,
+		"image": "sugimarine-mr-5040-20l.jpg"
+	},
+	{
+		"id": 125,
+		"name": "Sugimarine MR-5070",
+		"category": "Marine Engine Oil",
+		"quantity": 20,
+		"image": "sugimarine-mr-5070-20l.jpg"
+	},
+	{
+		"id": 126,
+		"name": "Sugimarine ZT-TCW-3",
+		"category": "Speed Boat Engine Oil",
+		"quantity": 20,
+		"image": "sugimarine-zt-tcw-3-20l.jpg"
+	},
+	{
+		"id": 127,
+		"name": "Rapro 30",
+		"category": "Rubber Processing Oil",
+		"quantity": 20,
+		"image": "rapro-30-20l.jpg"
+	},
+	{
+		"id": 128,
+		"name": "Suncleaner N-200",
+		"category": "Cleaning Oil",
+		"quantity": 18,
+		"image": "suncleaner-n-200-18l.jpg"
+	},
+	{
+		"id": 129,
+		"name": "Suncleaner N-300T",
+		"category": "Cleaning Oil",
+		"quantity": 18,
+		"image": "suncleaner-n-300t-18l.jpg"
+	},
+	{
+		"id": 130,
+		"name": "Suncleaner G-1000M",
+		"category": "Cleaning Oil",
+		"quantity": 18,
+		"image": "suncleaner-g-1000m-18l.jpg"
+	},
+	{
+		"id": 131,
+		"name": "Sugicut CE-11N",
+		"category": "Cutting Coolant",
+		"quantity": 18,
+		"image": "sugicut-ce-11n-18l.jpg"
+	},
+	{
+		"id": 132,
+		"name": "Sugicut CE-14G",
+		"category": "Cutting Coolant",
+		"quantity": 18,
+		"image": "sugicut-ce-14g-18l.jpg"
+	},
+	{
+		"id": 133,
+		"name": "Sugicut CS-53S",
+		"category": "Cutting Coolant",
+		"quantity": 18,
+		"image": "sugicut-cs-53s-18l.jpg"
+	},
+	{
+		"id": 134,
+		"name": "Sunpress S-554",
+		"category": "Pressing Oil",
+		"quantity": 18,
+		"image": "sunpress-s-554-18l.jpg"
+	}
+]
