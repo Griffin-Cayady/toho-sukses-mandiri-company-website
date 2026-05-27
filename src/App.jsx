@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import HomePage from '@/pages/HomePage';
-import ProductsPage from '@/pages/ProductsPage';
-import AboutPage from '@/pages/AboutPage';
+const HomePage = lazy(() => import('@/pages/HomePage'));
+const ProductsPage = lazy(() => import('@/pages/ProductsPage'));
+const AboutPage = lazy(() => import('@/pages/AboutPage'));
 import { useLanguage } from '@/context/LanguageContext.jsx';
 import ScrollToTop from '@/components/ScrollToTop';
 import { SupabaseProvider } from '@/contexts/SupabaseContext.jsx';
@@ -30,11 +30,13 @@ function App() {
         <Navbar />
         
         <main>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/products" element={<ProductsPage />} />
-            <Route path="/about" element={<AboutPage />} />
-          </Routes>
+          <Suspense fallback={<div className="min-h-screen" />}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/products" element={<ProductsPage />} />
+              <Route path="/about" element={<AboutPage />} />
+            </Routes>
+          </Suspense>
         </main>
         
         <Footer />

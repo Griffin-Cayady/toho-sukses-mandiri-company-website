@@ -307,7 +307,26 @@ export default defineConfig({
 				'@babel/traverse',
 				'@babel/generator',
 				'@babel/types'
-			]
+			],
+			output: {
+				manualChunks: {
+					'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+					'ui-vendor': ['framer-motion', 'lucide-react'],
+					'supabase': ['@supabase/supabase-js'],
+					'radix': [
+						'@radix-ui/react-dialog',
+						'@radix-ui/react-dropdown-menu',
+						'@radix-ui/react-tabs',
+						'@radix-ui/react-toast',
+						'@radix-ui/react-slot',
+						'@radix-ui/react-label',
+						'@radix-ui/react-checkbox',
+						'@radix-ui/react-avatar',
+						'@radix-ui/react-slider',
+						'@radix-ui/react-alert-dialog',
+					],
+				}
+			}
 		}
 	}
 });
